@@ -1,4 +1,4 @@
-@CadastrarNoBancoDeTalentos
+@CadastrarBancoDeTalentos
 @VagasAbertas
 
 Feature: Cadastrar no Banco de Talentos
