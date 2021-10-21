@@ -33,8 +33,9 @@ Contexto: usuario acessar a pagina e fazer o login
         | Adjetivo10        | Persistente |
     Quando usuario clica efetua o login
         | usuario                          | senha  |
-        | vitorfilipedapaz@mnproducoes.com | abc123 |
+        | heitorhenryduarte@etirama.com.br | abc123 |
     E preenche todos os campos nas telas seguintes 
+    E confirma a operacao
     Então e exibida a mensagem de confirmacao
 
 
@@ -55,7 +56,8 @@ Contexto: usuario acessar a pagina e fazer o login
     Quando usuario clica efetua o login
         | usuario                          | senha  |
         | edsonnicolasfernandes@dpf.com.br | abc123 |
-    E preenche todos os campos nas telas seguintes 
+    E preenche todos os campos nas telas seguintes
+    E confirma a operacao
     Então e exibida a mensagem de confirmacao
 
 
@@ -74,7 +76,8 @@ Contexto: usuario acessar a pagina e fazer o login
         | Genero            | Masculino                     |
         | Nascimento        | 04/01/1991                    |
     Quando usuario clica registrar o cadastro
-    E preenche todos os campos nas telas seguintes 
+    E preenche todos os campos nas telas seguintes
+    E confirma a operacao
     Então e exibida a mensagem de confirmacao
 
 

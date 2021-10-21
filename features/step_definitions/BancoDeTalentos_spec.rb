@@ -1,3 +1,4 @@
+
 Dado('que o usuario esteja na tela de login no site RH') do
     visit "/"
     find('.sc-igwadP' , text: "CADASTRAR").click
@@ -17,7 +18,7 @@ Quando('usuario clica efetua o login') do |table|
   end
   
   Quando('preenche todos os campos nas telas seguintes') do
-        fill_in "nationality", with: "#{@dadosUsuario['Nacionalidade']}" 
+        fill_in "nationality", with: "#{@dadosUsuario['Nacionalidade']}"
         fill_in "naturality", with: "#{@dadosUsuario['Naturalidade']}"
         find("div[name='maritalStatus'][class='sc-jRuhRL byOqPW']").click
         find(:xpath, "//div[contains(text(),'Solteiro')]").click
@@ -47,9 +48,12 @@ Quando('usuario clica efetua o login') do |table|
   end
 
   Quando('confirma a operacao') do
-    find(:xpath, "//div[@id='saveDataToNextStep']").click
+    find("button[id='saveFinalize']").click
   end
   
 Então('e exibida a mensagem de confirmacao') do
-    #expect(page.assert_text('elemento')).to eq true
+    page.assert_text('Sucesso!')
+    page.assert_text('Seu cadastro no banco de talentos da Nayara Corporation foi realizado com.')
+    page.assert_text('sucesso! Entraremos em contato caso surja uma nova oportunidade compatível.')
+    page.assert_text('com as suas competências.')
   end
