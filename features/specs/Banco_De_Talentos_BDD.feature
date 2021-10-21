@@ -11,7 +11,7 @@ Contexto: usuario acessar a pagina e fazer o login
     Dado que o usuario esteja na tela de login no site RH
 
 
-@Cenario1
+@teste1
 @Automatizado
     Esquema do Cenário: Cadastrar o currículo no Banco de Talentos
     E que o usuario possua os dados pessoais
@@ -37,7 +37,7 @@ Contexto: usuario acessar a pagina e fazer o login
     Então e exibida a mensagem de confirmacao
 
 
-@Cenario2
+@teste2
 @Automatizado
     Esquema do Cenário: Cadastrar o currículo no Banco de Talentos após fazer o login
     E que o usuario possua os dados pessoais
@@ -58,7 +58,7 @@ Contexto: usuario acessar a pagina e fazer o login
     Então e exibida a mensagem de confirmacao
 
 
-@Cenario3
+@teste3
 @Automatizado
     Esquema do Cenário: Registrar o usuário para cadastrar no Banco de Talentos
     E que o usuario possua os dados pessoais
