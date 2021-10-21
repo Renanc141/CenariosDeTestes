@@ -1,4 +1,4 @@
-# Site RH > Cadastrar Banco de Talentos
+# Site RH > Banco de Talentos > Cadastrar
 
 [Bug] - Quando clico na página e clico diretamente na opção "Banco de Talentos" apresenta uma falha na página com erro 404 - Página não encontrada. 
 Deverá corrigir para quando clicar na opção "Banco de Talentos" abrir a página de login para realizar o cadastro.
