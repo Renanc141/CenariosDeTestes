@@ -1,5 +1,6 @@
 @BancoDeTalentos
 @VagasAbertas
+@Especificacao
 
 Feature: Cadastrar currículo no Banco de Talentos
     Como um usuário do sistema RH com permissão de usuário

@@ -1,6 +1,7 @@
 #language: pt
 @BancoDeTalentos
 @VagasAbertas
+@Automacao
 
 Funcionalidade: Cadastrar currículo no Banco de Talentos 
             Como um usuário do sistema RH com permissão de usuário
@@ -59,7 +60,7 @@ Contexto: usuario acessar a pagina e fazer o login
 
 
 @teste3
-@Automatizado
+@Automatizar
     Esquema do Cenário: Registrar o usuário para cadastrar no Banco de Talentos
     E que o usuario possua os dados pessoais
         | Email             | carloscardoso20@tasaut.com.br |
@@ -75,4 +76,26 @@ Contexto: usuario acessar a pagina e fazer o login
     Quando usuario clica registrar o cadastro
     E preenche todos os campos nas telas seguintes 
     Então e exibida a mensagem de confirmacao
+
+
+@teste4
+@Manual
+    Esquema do Cenário: Cadastrar no Banco de Talentos com usuário não registrado
+    Quando usuario clica em cadastrar 
+    E preenche os campos na tela de login
+        | usuario                         | senha  |
+        | viniciuscardoso20@tasaut.com.br | abc123 |
+    E clica em entrar
+    Então e exibida a mensagem de bloqueio '<Usuário ou senha inválidos.>'
+
+
+@teste5
+@Manual
+    Esquema do Cenário: Cadastrar no Banco de Talentos com usuário já cadastrado
+    Quando usuario clica em cadastrar 
+    E preenche os campos na tela de login
+        | usuario             | senha  |
+        | renanc141@gmail.com | abc123 |
+    E clica em entrar
+    Então e exibida a mensagem de alerta '<Tudo certo! Você já estava cadastrado no banco de talentos da Nayara Corporation.>'
 
