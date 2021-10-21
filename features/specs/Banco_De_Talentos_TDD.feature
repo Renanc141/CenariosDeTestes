@@ -9,6 +9,7 @@ Feature: Cadastrar currículo no Banco de Talentos
     Background:
         Given que o usuário esteja na tela de login no site RH
 
+@Cenario1
 @Automatizar
     Scenario Outline: Cadastrar o currículo no Banco de Talentos
         When aciona o Cadastrar
@@ -41,6 +42,7 @@ Examples:
     | enricopietrodias_@kof.com.mx | abc123 | Brasileiro    | Betim        | Solteiro    | Trainee     | 1.000,00          | Popular   | Sincero   | Líder     | Animado   | Persistente | Popular   | Sincero   | Líder     | Animado   | Persistente |
 
 
+@Cenario2
 @Automatizar
     Scenario Outline: Cadastrar o currículo no Banco de Talentos após fazer o login
         And aciona o Entrar
@@ -67,6 +69,7 @@ Examples:
     | edsonnicolasfernandes@dpf.com.br | abc123 | Popular   | Sincero   | Líder     | Animado   | Persistente | Popular   | Sincero   | Líder     | Animado   | Persistente |
 
 
+@Cenario3
 @Automatizar
     Scenario Outline: Registrar o usuário para cadastrar no Banco de Talentos
         And aciona o Cadastrar
@@ -88,10 +91,11 @@ Examples:
         Then exibe a mensagem '<Currículo salvo com sucesso.>'
 
 Examples:
-    | EmailOuCpf                    | Cpf         | Senha  | RepetirSenha | TelefoneOuCelular | Email                         | EmailNovamente                | NomeCompleto          | Genero    | Nascimento |
+    | Email                         | Cpf         | Senha  | RepetirSenha | TelefoneOuCelular | Email                         | EmailNovamente                | NomeCompleto          | Genero    | Nascimento |
     | carloscardoso20@tasaut.com.br | 36030211692 | abc123 | abc123       | 31982060440       | carloscardoso20@tasaut.com.br | carloscardoso20@tasaut.com.br | Carlos Cardoso Soares | Masculino | 04/01/1991 |
+    
 
-
+@Cenario4
 @Manual
     Scenario Outline: Cadastrar no Banco de Talentos com usuário não registrado
         When aciona o Cadastrar
@@ -106,6 +110,7 @@ Examples:
     | viniciuscardoso20@tasaut.com.br | abc123 |
 
 
+@Cenario5
 @Manual
     Scenario Outline: Cadastrar no Banco de Talentos com usuário já cadastrado
         When aciona o Cadastrar
