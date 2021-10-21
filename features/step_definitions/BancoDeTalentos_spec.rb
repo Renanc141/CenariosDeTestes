@@ -1,4 +1,4 @@
-Dado('que o usuario esteja na tela de login') do
+Dado('que o usuario esteja na tela de login no site RH') do
     visit "/"
     find('.sc-igwadP' , text: "CADASTRAR").click
   end
@@ -8,7 +8,7 @@ Dado('que o usuario esteja na tela de login') do
  
   end
   
-  Quando('usuario clica efetua o login') do |table|
+Quando('usuario clica efetua o login') do |table|
     tabela = table.hashes
    
     tabela.each do |value| 
@@ -31,6 +31,6 @@ Dado('que o usuario esteja na tela de login') do
     pending # Write code here that turns the phrase above into concrete actions
   end
   
-  Então('e exibida a mensagem de confirmacao') do
+Então('e exibida a mensagem de confirmacao') do
     pending # Write code here that turns the phrase above into concrete actions
   end

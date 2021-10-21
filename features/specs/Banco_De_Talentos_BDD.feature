@@ -6,13 +6,13 @@ Funcionalidade: Cadastrar currículo no Banco de Talentos
             Para candidatar nas vagas
 
 Contexto: usuario acessar a pagina e fazer o login
-    Dado que o usuario esteja na tela de login
+    Dado que o usuario esteja na tela de login no site RH
 
 
-    @teste
-    @Automatizado
+@teste
+@Automatizado
     Esquema do Cenário: Cadastrar o currículo no Banco de Talentos
-    Dado que o usuario possua os dados pessoais
+    E que o usuario possua os dados pessoais
         | Nacionalidade     | Brasileiro  |
         | Naturalidade      | Betim       |
         | EstadoCivil       | Solteiro    |
@@ -29,7 +29,8 @@ Contexto: usuario acessar a pagina e fazer o login
         | Adjetivo9         | Animado     |
         | Adjetivo10        | Persistente |
     Quando usuario clica efetua o login
-    | usuario                      | senha  |
-    | enricopietrodias_@kof.com.mx | abc123 |
+        | usuario                      | senha  |
+        | enricopietrodias_@kof.com.mx | abc123 |
     E preenche todos os campos nas telas seguintes 
     Então e exibida a mensagem de confirmacao
+

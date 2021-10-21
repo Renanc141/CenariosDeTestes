@@ -7,7 +7,7 @@ Feature: Cadastrar currículo no Banco de Talentos
     Para candidatar nas vagas
 
     Background:
-        Given que o usuário esteja logado no site RH
+        Given que o usuário esteja na tela de login no site RH
 
 @Automatizar
     Scenario Outline: Cadastrar o currículo no Banco de Talentos
