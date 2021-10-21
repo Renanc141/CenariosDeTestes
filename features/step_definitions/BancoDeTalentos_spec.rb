@@ -25,10 +25,8 @@ Dado('que o usuario esteja na tela de login') do
         
         find("button[id=saveDataToNextStep").click
     
-
   end
 
-  
   Quando('confirma a operacao') do
     pending # Write code here that turns the phrase above into concrete actions
   end
