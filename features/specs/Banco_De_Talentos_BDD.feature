@@ -32,14 +32,14 @@ Contexto: usuario acessar a pagina e fazer o login
         | Adjetivo9         | Animado     |
         | Adjetivo10        | Persistente |
     Quando usuario clica efetua o login
-        | usuario                      | senha  |
-        | enricopietrodias_@kof.com.mx | abc123 |
+        | usuario                          | senha  |
+        | vitorfilipedapaz@mnproducoes.com | abc123 |
     E preenche todos os campos nas telas seguintes 
     Então e exibida a mensagem de confirmacao
 
 
 @teste2
-@Automatizado
+@Automatizar
     Esquema do Cenário: Cadastrar o currículo no Banco de Talentos após fazer o login
     E que o usuario possua os dados pessoais
         | Adjetivo1         | Popular     |
