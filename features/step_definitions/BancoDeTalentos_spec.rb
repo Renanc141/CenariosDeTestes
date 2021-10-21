@@ -21,7 +21,8 @@ Quando('usuario clica efetua o login') do |table|
   Quando('preenche todos os campos nas telas seguintes') do
         fill_in "nationality", with: "#{@dadosUsuario['Nacionalidade']}"
         fill_in "naturality", with: "#{@dadosUsuario['Naturalidade']}"
-        fill_in "salaryExpectation" ,with: "#{@dadosUsuario['PretensaoSalarial']}"  
+        fill_in "salaryExpectation" ,with: "#{@dadosUsuario['PretensaoSalarial']}" 
+        find('.sc-jxGEyO.icBUKs' , text: "Solteiro").click
         
         find("button[id=saveDataToNextStep").click
     
