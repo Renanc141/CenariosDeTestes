@@ -39,9 +39,9 @@ Feature: Cadastrar currículo no Banco de Talentos
         Then exibe a mensagem '<Sucesso! Seu cadastro no banco de talentos da Nayara Corporation foi realizado com sucesso!>'
 
 Examples:
-    | EmailOuCpf                   | Senha  | Nacionalidade | Naturalidade | EstadoCivil | Senioridade | PretensaoSalarial | Adjetivo1 | Adjetivo2 | Adjetivo3 | Adjetivo4 | Adjetivo5   | Adjetivo6 | Adjetivo7 | Adjetivo8 | Adjetivo9 | Adjetivo10  |
-    | enricopietrodias_@kof.com.mx | abc123 | Brasileiro    | Betim        | Solteiro    | Trainee     | 1.000,00          | Popular   | Sincero   | Líder     | Animado   | Persistente | Popular   | Sincero   | Líder     | Animado   | Persistente |
-
+    | EmailOuCpf                       | Senha  | Nacionalidade | Naturalidade | EstadoCivil | Senioridade | PretensaoSalarial | Adjetivo1 | Adjetivo2 | Adjetivo3 | Adjetivo4 | Adjetivo5   | Adjetivo6 | Adjetivo7 | Adjetivo8 | Adjetivo9 | Adjetivo10  |
+    | heitorhenryduarte@etirama.com.br | abc123 | Brasileiro    | Betim        | Solteiro    | Trainee     | 1.000,00          | Popular   | Sincero   | Líder     | Animado   | Persistente | Popular   | Sincero   | Líder     | Animado   | Persistente |
+    
 
 @Cenario2
 @Automatizar
